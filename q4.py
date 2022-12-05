@@ -30,7 +30,7 @@ def q4(s):
     caps = 0
     if len(list(s)) == 0:
         return 0
-    else: list(s)[0].isupper() == False:
+    if list(s)[0].isupper() == False:
         caps += 1
     for i in list(s):
         if i.isupper() == True:
