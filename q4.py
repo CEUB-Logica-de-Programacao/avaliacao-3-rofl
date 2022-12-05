@@ -27,8 +27,10 @@
 # Para obter a nota máxima dessa questão, não deve-se utilizar nenhuma função pronta do Python.
 
 def q4(s):
-    caps = 0        
-    if list(s)[0].isupper() == False:
+    caps = 0
+    if len(list(s)) == 0:
+        return 0
+    else: list(s)[0].isupper() == False:
         caps += 1
     for i in list(s):
         if i.isupper() == True:
